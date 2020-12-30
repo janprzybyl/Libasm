@@ -6,5 +6,3 @@ An assembly language is a low-level programming language designed for a specific
 
 # General
 The project contains basic functions in Assembly using the x86 Intel syntax.
-
-
