@@ -13,6 +13,8 @@ The project contains basic functions in Assembly using the x86 Intel syntax.
   - `ft_islower`
   - `ft_isascii`
   - `ft_isalpha`
+  - `ft_toupper`
+  - `ft_tolower`
 
 ## Requirements
 - nasm - to install just type `brew install nasm` in the command line.
