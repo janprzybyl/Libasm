@@ -37,6 +37,7 @@ The project contains basic functions in Assembly using the x86-64 Intel syntax.
   - `ft_isalpha`
   - `ft_toupper`
   - `ft_tolower`
+  - `ft_isalnum`
 
 # Setup
 ```
