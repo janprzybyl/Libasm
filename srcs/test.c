@@ -23,10 +23,14 @@ int main()
     // else
     //     printf("It is not ascii\n");
 
-    if (ft_isalpha('1'))
-        printf("It is alpha\n");
-    else
-        printf("It is not alpha\n");
+    // if (ft_isalpha('1'))
+    //     printf("It is alpha\n");
+    // else
+    //     printf("It is not alpha\n");
+
+    // printf("%c\n", ft_tolower('F'));
+
+    printf("%c\n", ft_toupper('p'));
 
 
     return (0);
