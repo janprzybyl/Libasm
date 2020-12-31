@@ -39,4 +39,5 @@ The project contains basic functions in Assembly using the x86-64 Intel syntax.
   - `ft_tolower`
 
 ## Requirements
-- nasm - to install just type `brew install nasm` in the command line.
+- nasm - `brew install nasm`
+- gcc - `brew install gcc`
