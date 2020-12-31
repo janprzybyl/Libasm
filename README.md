@@ -38,6 +38,14 @@ The project contains basic functions in Assembly using the x86-64 Intel syntax.
   - `ft_toupper`
   - `ft_tolower`
 
-## Requirements
-- nasm - `brew install nasm`
-- gcc - `brew install gcc`
+# Setup
+```
+$ git clone git@github.com:kamilprzybyl/Libasm.git
+$ cd Libasm
+$ make
+```
+### Testing
+```
+make test
+./test
+```
