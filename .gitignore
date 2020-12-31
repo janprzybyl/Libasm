@@ -1,0 +1,5 @@
+test
+libasm.a
+*.o
+srcs/*.o
+includes/libasm.h.gch
