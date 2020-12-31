@@ -4,25 +4,28 @@ CC = gcc
 CFLAGS = -c -Wall -Wextra -Werror
 NAME = libasm.a
 HEADERS = includes/
-SRCS = srcs
+SRCS = srcs/ft_isdigit.s \
+		srcs/ft_islower.s \
+		srcs/ft_isupper.s
 
-$(NAME): all
- 
-all: 
-	@$(ASM_CC) $(ASM_FLAGS) $(SRCS)/*.s       			# compile *.s files
-	@ar -rc $(NAME) $(SRCS)/*.o							# create a static library using object files and name it libasm.a
-	@echo "\033[32m$(NAME) built!\033[0m"				
+OBJS = $(SRCS:.s=.o)
 
-test:
-	@gcc $(SRCS)/test.c -L. $(NAME) -o test				# compile test.c and libasm.a library together to create exec file
-	@echo "\033[32mlibasm test ready!\033[0m"
+all: $(NAME)
 
+%.o: %.s
+	@nasm -f macho64 $< -o $@
+
+$(NAME): $(OBJS)
+	@ar rc $(NAME) $(OBJS)
 	
-clean:
-	@rm *.o srcs/*.o
+test:
+	@gcc srcs/test.c -L. $(NAME) -o test				# compile test.c and libasm.a library together to create exec file
 
-fclean:
-	@rm $(NAME) *.o srcs/*.o test
+clean:
+	@/bin/rm -rf $(OBJS)
+
+fclean: clean
+	@/bin/rm -rf $(NAME) test
 
 re: fclean all
 
