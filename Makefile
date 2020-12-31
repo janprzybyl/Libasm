@@ -6,7 +6,9 @@ NAME = libasm.a
 HEADERS = includes/
 SRCS = srcs/ft_isdigit.s \
 		srcs/ft_islower.s \
-		srcs/ft_isupper.s
+		srcs/ft_isupper.s \
+		srcs/ft_isascii.s \
+		srcs/ft_isalpha.s
 
 OBJS = $(SRCS:.s=.o)
 

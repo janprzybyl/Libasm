@@ -13,18 +13,3 @@ is_upper:
 is_not_upper:
             xor rax, rax
             ret
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

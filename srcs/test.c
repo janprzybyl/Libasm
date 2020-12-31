@@ -13,10 +13,20 @@ int main()
     // else
     //     printf("It is not lower\n");
     
-    if (ft_isupper('A') == 1)
-        printf("It is upper\n");
+    // if (ft_isupper('A') == 1)
+    //     printf("It is upper\n");
+    // else
+    //     printf("It is not upper\n");
+
+    // if (ft_isascii('g') == 1)
+    //     printf("It is ascii\n");
+    // else
+    //     printf("It is not ascii\n");
+
+    if (ft_isalpha('1'))
+        printf("It is alpha\n");
     else
-        printf("It is not upper\n");
+        printf("It is not alpha\n");
 
 
     return (0);
