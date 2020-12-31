@@ -11,6 +11,8 @@ The project contains basic functions in Assembly using the x86 Intel syntax.
   - `ft_isdigit`
   - `ft_isupper`
   - `ft_islower`
+  - `ft_isascii`
+  - `ft_isalpha`
 
 ## Requirements
 - nasm - to install just type `brew install nasm` in the command line.
