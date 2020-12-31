@@ -30,8 +30,12 @@ int main()
 
     // printf("%c\n", ft_tolower('F'));
 
-    printf("%c\n", ft_toupper('p'));
+    // printf("%c\n", ft_toupper('p'));
 
+    if (ft_isalnum('-') == 1)
+        printf("It is isalnum\n");
+    else
+        printf("It is not isalnum\n");    
 
     return (0);
 }
