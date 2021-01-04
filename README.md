@@ -52,3 +52,7 @@ $ make
 make test
 ./test
 ```
+
+</br >
+
+> :bulb: To better understand this project check pdf in my repo
