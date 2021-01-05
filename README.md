@@ -2,25 +2,25 @@
 The aim of this project is to get familiar with assembly language.
 
 ```
-global _ft_isalpha
+            global      _ft_isalpha
 
-extern _ft_islower
-extern _ft_isupper
+            extern      _ft_islower
+            extern      _ft_isupper
 
 _ft_isalpha:
-            call _ft_islower
-            test rax, rax
-            jnz is_alpha
-            call _ft_isupper
-            test rax, rax
-            jnz is_alpha
+            call        _ft_islower
+            test        rax, rax
+            jnz         is_alpha
+            call        _ft_isupper
+            test        rax, rax
+            jnz         is_alpha
 
 is_not_alpha:
-            xor rax, rax
+            xor         rax, rax
             ret
 
 is_alpha:   
-            mov rax, 1
+            mov         rax, 1
             ret
 ``` 
 
