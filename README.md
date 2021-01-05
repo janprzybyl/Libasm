@@ -2,6 +2,7 @@
 The aim of this project is to get familiar with assembly language.
 
 ```
+section. text
             global      _ft_isalpha
 
             extern      _ft_islower
