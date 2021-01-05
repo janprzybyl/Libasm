@@ -9,14 +9,14 @@ The aim of this project is to get familiar with assembly language.
 
 _ft_isalpha:
             call        _ft_islower
-            test        rax, rax
-            jnz         is_alpha
+            test        rax, rax                ; check what's _ft_islower return value
+            jnz         is_alpha                ; jump to label if not zero
             call        _ft_isupper
             test        rax, rax
             jnz         is_alpha
 
 is_not_alpha:
-            xor         rax, rax
+            xor         rax, rax                
             ret
 
 is_alpha:   
