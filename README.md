@@ -41,6 +41,7 @@ The project contains basic functions in Assembly using the x86_64 architecture.
   - `ft_toupper`
   - `ft_tolower`
   - `ft_isalnum`
+  - `ft_strlen`
 
 # Setup
 ```
