@@ -42,6 +42,7 @@ The project contains basic functions in Assembly using the x86_64 architecture.
   - `ft_tolower`
   - `ft_isalnum`
   - `ft_strlen`
+  - `ft_strcpy`
 
 # Setup
 ```
