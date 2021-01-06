@@ -12,7 +12,7 @@ increment:
 copy:
 		; Note!
 		; You can't move someting from memory directly to memory. You have to load it into register first.
-		; You can't copy the BYTE value to 64-bit register. You need to use 8-bit register (which is 'dl').
+		; You can't copy the BYTE value to 64-bit register. You need to use 8-bit register (e.g. dl).
 		; For reading memory bytes use square brackets, inside of which you put the address (pointer) you want to access.
 		; It's a good idea to explicitly write the storage size, which is BYTE for a normal string.
 
