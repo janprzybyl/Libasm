@@ -32,10 +32,12 @@ int main()
 
     // printf("%c\n", ft_toupper('p'));
 
-    if (ft_isalnum('-') == 1)
-        printf("It is isalnum\n");
-    else
-        printf("It is not isalnum\n");    
+    // if (ft_isalnum('-') == 1)
+    //     printf("It is isalnum\n");
+    // else
+    //     printf("It is not isalnum\n"); 
+
+    printf("%d\n", ft_strlen("Hello World\n"));   
 
     return (0);
 }
