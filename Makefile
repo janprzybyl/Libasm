@@ -12,7 +12,8 @@ SRCS = srcs/ft_isdigit.s \
 		srcs/ft_tolower.s \
 		srcs/ft_toupper.s \
 		srcs/ft_isalnum.s \
-		srcs/ft_strlen.s
+		srcs/ft_strlen.s \
+		srcs/ft_strcpy.s
 
 OBJS = $(SRCS:.s=.o)
 

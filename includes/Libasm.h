@@ -10,5 +10,6 @@ int ft_tolower(int c);
 int ft_toupper(int c);
 int ft_isalnum(int c);
 int ft_strlen(char *s);
+int ft_strcpy(char *dst, char *src);
 
 #endif

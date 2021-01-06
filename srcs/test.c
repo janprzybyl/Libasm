@@ -1,5 +1,6 @@
 #include "../includes/Libasm.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -37,7 +38,12 @@ int main()
     // else
     //     printf("It is not isalnum\n"); 
 
-    printf("%d\n", ft_strlen("Hello World\n"));   
+    // printf("%d\n", ft_strlen("Hello World\n"));   
+
+    char *dst = malloc(13 * sizeof(char));
+    ft_strcpy(dst, "Hello World\n");
+    printf("%s", dst);
+    free(dst);
 
     return (0);
 }
