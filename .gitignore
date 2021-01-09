@@ -3,3 +3,4 @@ libasm.a
 *.o
 srcs/*.o
 includes/libasm.h.gch
+.DS_Store
