@@ -33,13 +33,12 @@ An assembly language is a low-level programming language designed for a specific
 
 # General
 The project contains basic functions in Assembly using the x86_64 architecture.
-  - `ft_isdigit`
   - `ft_isupper`
-  - `ft_islower`
   - `ft_isascii`
-  - `ft_isalpha`
   - `ft_toupper`
-  - `ft_tolower`
+  - `ft_strchr`
+  - `ft_bzero`
+  - `ft_write`
   - `ft_isalnum`
   - `ft_strlen`
   - `ft_strcpy`
