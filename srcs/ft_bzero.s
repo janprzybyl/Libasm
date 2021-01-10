@@ -1,11 +1,12 @@
         global  _ft_bzero
 
 _ft_bzero:
-        cmp     rsi, 0              ; checking if second parameter is zero
+        cmp     rsi, 0              
         jz      return
         jmp     set_to_zero
 
 set_to_zero:
+        ; Note!
         ; Since each char is one byte, moving by 1 byte moves by 1 char
         ; The rdi register holds address of value, but rsi register holds a value
         ; That's why when you increment rdi you move the pointer forward and in case of rsi you simply increment the value

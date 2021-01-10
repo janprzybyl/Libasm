@@ -76,11 +76,14 @@ int main()
     // }
 
 
-    char *str = malloc(sizeof(char) * 13);
-    str = "Hello there!";
-    printf("str before = %s\n", str);
-    bzero(&str, 20);
-    printf("str after = %s\n", str);
+    // char *str = malloc(sizeof(char) * 13);
+    // str = "Hello there!";
+    // printf("str before = %s\n", str);
+    // bzero(&str, 20);
+    // printf("str after = %s\n", str);
+
+
+    printf("%s\n", ft_strchr("Hello World\n", '\0'));
 
     return (0);
 }

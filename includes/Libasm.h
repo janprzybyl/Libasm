@@ -16,5 +16,6 @@ int ft_strcpy(char *dst, char *src);
 // int ft_strcmp(char *s1, char *s2);
 size_t ft_write(int fields, const void *buf, size_t nbyte);
 void ft_bzero(void *s, size_t n);
+char *ft_strchr(const char *s, int c);
 
 #endif
