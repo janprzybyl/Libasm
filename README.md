@@ -37,7 +37,7 @@ The project contains basic functions in Assembly using the x86_64 architecture.
   - `ft_write`
   - `ft_strlen`
   - `ft_strcpy`
-  - and more...
+  and more...
 
 # Setup
 ```
