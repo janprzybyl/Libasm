@@ -1,10 +1,10 @@
-        global  _ft_write
+        global  _ft_read
 
         extern  ___error
 
-_ft_write:
+_ft_read:
         mov     r8, rdx             ; save rdx value, because it may be reset after syscall
-        mov     rax, 0x02000004     ; syscall for write
+        mov     rax, 0x02000003     ; syscall for read
         syscall                     ; error sets carry flag and return value (errno) will be saved in rax
         jc      failure             ; if carry flag is set then we know error occured
         jmp     success             
@@ -17,5 +17,5 @@ failure:
         ret
 
 success:
-        mov     rax, r8            ; return number of bytes which were written
+        mov     rax, r8             ; set return as number of read lines
         ret

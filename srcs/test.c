@@ -1,31 +1,30 @@
 #include "../includes/Libasm.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <string.h>
+#include <stdio.h>                  // printf
+#include <fcntl.h>                  // open
+#include <string.h>                 // strlen
+#include <unistd.h>                 // read, close
 
 int main()
 {
-    // if (ft_isdigit(22) == 1)
+    // if (ft_isdigit(22))
     //     printf("It is digit\n");
     // else
     //     printf("It is not digit\n");
 
 
-    // if (ft_islower('B') == 1)
+    // if (ft_islower('B'))
     //     printf("It is lower\n");
     // else
     //     printf("It is not lower\n");
     
 
-    // if (ft_isupper('A') == 1)
+    // if (ft_isupper('A'))
     //     printf("It is upper\n");
     // else
     //     printf("It is not upper\n");
 
 
-    // if (ft_isascii('g') == 1)
+    // if (ft_isascii('g'))
     //     printf("It is ascii\n");
     // else
     //     printf("It is not ascii\n");
@@ -43,7 +42,7 @@ int main()
     // printf("%c\n", ft_toupper('p'));
 
 
-    // if (ft_isalnum('-') == 1)
+    // if (ft_isalnum('-'))
     //     printf("It is isalnum\n");
     // else
     //     printf("It is not isalnum\n"); 
@@ -58,11 +57,11 @@ int main()
     // free(dst);
 
 
-    // printf("%d\n", ft_strcmp("Helloo", "Hello"));
+    // // printf("%d\n", ft_strcmp("Helloo", "Hello"));
 
 
     // int fd = open("test.txt", O_CREAT | O_WRONLY);
-    // char *write_to = "Hello there boys!";
+    // char *write_to = "Hello Kamil, How are you?";
     // if (fd != -1) {
     //     printf("%zu\n", ft_write(fd, &write_to, strlen(write_to)));
     //     close(fd);
@@ -71,7 +70,8 @@ int main()
     // fd = open("test.txt", O_RDONLY);
     // char *read_from;
     // if (fd != -1) {
-    //     read(fd, &read_from, sizeof(read_from));
+    //     ft_read(fd, &read_from, 6);
+    //     printf("read_from = %s\n", read_from);
     //     close(fd);
     // }
 
@@ -79,11 +79,14 @@ int main()
     // char *str = malloc(sizeof(char) * 13);
     // str = "Hello there!";
     // printf("str before = %s\n", str);
-    // bzero(&str, 20);
+    // ft_bzero(&str, 20);
     // printf("str after = %s\n", str);
 
 
-    printf("%s\n", ft_strchr("Hello World\n", '\0'));
+    // printf("%s\n", ft_strchr("Hello World", 'o'));
+
+
+    printf("s2 = %s\n", ft_strdup("Hello World!");)
 
     return (0);
 }
