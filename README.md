@@ -55,4 +55,4 @@ make test
 
 </br >
 
-:bulb: To better understand this project check *Libasm.pdf* in my repo
+:bulb: To better understand this project check *Libasm.pdf* file
