@@ -4,3 +4,4 @@ libasm.a
 srcs/*.o
 includes/libasm.h.gch
 .DS_Store
+test.txt
