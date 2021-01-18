@@ -57,7 +57,7 @@ int main()
     // free(dst);
 
 
-    // // printf("%d\n", ft_strcmp("Helloo", "Hello"));
+    printf("%d\n", ft_strcmp("Hel", "Helbr"));
 
 
     // int fd = open("test.txt", O_CREAT | O_WRONLY);
@@ -86,7 +86,7 @@ int main()
     // printf("%s\n", ft_strchr("Hello World", 'o'));
 
 
-    printf("s2 = %s\n", ft_strdup("Hi, there!"));
+    // printf("s2 = %s\n", ft_strdup("Hi, there!"));
 
     return (0);
 }

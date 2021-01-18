@@ -1,35 +1,20 @@
-; not done yet!
-
         global  _ft_strcmp
 
 _ft_strcmp:
-        xor     rcx, rcx                ; we're gonna use it as a counter     
-
-        cmp     rdi, 0                  ; checking if given parameter isn't NULL
-        jz      return
-        cmp     rsi, 0
-        jz      return
-
-        jmp     compare                 ; let's begin
-
-increment:
-        inc     rcx
-
-compare:
-        mov     al, BYTE [rdi + rcx]
-        mov     dl, BYTE [rsi + rcx]
+        mov     al, [rdi]
+        mov     bl, [rsi]
         cmp     al, 0
         jz      subtract
-        cmp     dl, 0
+        cmp     bl, 0
         jz      subtract
-        test    al, dl
-        je      increment
-        mov     rax, 1
-        jmp     return
+        cmp     al, bl
+        jne     subtract
+        inc     rdi
+        inc     rsi
+        jmp     _ft_strcmp
 
 subtract:
-        sub     al, dl
+        movsx   rbx, bl
         movsx   rax, al
-
-return:
+        sub     rax, rbx
         ret
