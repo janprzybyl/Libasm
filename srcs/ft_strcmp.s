@@ -14,7 +14,7 @@ _ft_strcmp:
         jmp     _ft_strcmp
 
 subtract:
-        movsx   rbx, bl
+        movsx   rbx, bl         ; movsx allows us to copy value from smaller register to the bigger one
         movsx   rax, al
         sub     rax, rbx
         ret

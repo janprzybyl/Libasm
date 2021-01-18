@@ -48,7 +48,7 @@ int main()
     //     printf("It is not isalnum\n"); 
 
 
-    // printf("%d\n", ft_strlen("Hello World\n"));   
+    // printf("%d\n", ft_strlen("Hi, there!"));   
 
 
     // char *dst = malloc(13 * sizeof(char));
@@ -57,21 +57,20 @@ int main()
     // free(dst);
 
 
-    printf("%d\n", ft_strcmp("Hel", "Helbr"));
+    // printf("%d\n", ft_strcmp("Hel", "Helbr"));
 
 
     // int fd = open("test.txt", O_CREAT | O_WRONLY);
     // char *write_to = "Hello Kamil, How are you?";
     // if (fd != -1) {
-    //     printf("%zu\n", ft_write(fd, &write_to, strlen(write_to)));
+    //     printf("write = %zu\n", ft_write(fd, &write_to, strlen(write_to)));
     //     close(fd);
     // }
 
     // fd = open("test.txt", O_RDONLY);
     // char *read_from;
     // if (fd != -1) {
-    //     ft_read(fd, &read_from, 6);
-    //     printf("read_from = %s\n", read_from);
+    //     printf("read = %zu\n", ft_read(fd, &read_from, 6));
     //     close(fd);
     // }
 
@@ -86,7 +85,7 @@ int main()
     // printf("%s\n", ft_strchr("Hello World", 'o'));
 
 
-    // printf("s2 = %s\n", ft_strdup("Hi, there!"));
+    // printf("s2 = %s\n", strdup(NULL));
 
     return (0);
 }
