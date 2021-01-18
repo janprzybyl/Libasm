@@ -86,7 +86,7 @@ int main()
     // printf("%s\n", ft_strchr("Hello World", 'o'));
 
 
-    printf("s2 = %s\n", ft_strdup("Hello World!");)
+    printf("s2 = %s\n", ft_strdup("Hi, there!"));
 
     return (0);
 }
