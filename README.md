@@ -1,7 +1,7 @@
 # Libasm
 The aim of this project is to get familiar with assembly language.
 
-![](car)
+![](carbon.png)
 
 # The language
 An assembly language is a low-level programming language designed for a specific type of processor.
